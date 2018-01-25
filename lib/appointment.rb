@@ -7,17 +7,8 @@ class Appointment
   def initialize(doctor, date)
     @doctor = doctor
     @date = date
-    @appointments
-  end
+    doctor.add_appointment(self)
 
-  def patient
-    @patient
-  end
-
-  def doctor
-    @appointments.collect do |appointment|
-      appointment.doctor
-    end
   end
 end
 
