@@ -8,17 +8,17 @@ class Appointment
     @doctor = doctor
     @date = date
     @appointments
-end
-
-def patient
-  @patient
-end
-
-def doctor
-  @appointments.collect do |appointment|
-    appointment.doctor
   end
-end
+
+  def patient
+    @patient
+  end
+
+  def doctor
+    @appointments.collect do |appointment|
+      appointment.doctor
+    end
+  end
 
 end
 
