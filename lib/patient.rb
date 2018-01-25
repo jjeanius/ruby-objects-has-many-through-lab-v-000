@@ -1,3 +1,5 @@
+require 'pry'
+
 class Patient
 
   attr_accessor :name, :appointment
@@ -18,6 +20,7 @@ class Patient
 
   def doctors
     @appointment.collect do|appointment|
+      binding.pry
       appointment.doctor
     end
   end
