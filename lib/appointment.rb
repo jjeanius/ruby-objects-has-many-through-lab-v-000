@@ -15,7 +15,7 @@ class Appointment
 
   def doctor
   #  appointments.collect do |appointment|
-  appointment.doctor = doctor
+  appointment.doctor
   #  end
   end
 end
