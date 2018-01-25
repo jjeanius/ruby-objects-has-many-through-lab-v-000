@@ -11,15 +11,6 @@ class Appointment
     doctor.add_appointment(self)
   end
 
-  def patient
-    @patient
-  end
-
-  def doctor
-    @appointments.collect do |appointment|
-      appointment.doctor
-    end
-  end
 
 end
 
