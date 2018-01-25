@@ -13,7 +13,7 @@ class Doctor
   end
 
   def apppointments
-    self.appointments
+    @appointments
   end
 
  def patients
