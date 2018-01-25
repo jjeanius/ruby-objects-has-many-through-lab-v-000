@@ -8,8 +8,19 @@ class Appointment
     @doctor = doctor
     @date = date
     doctor.add_appointment(self)
+    @appointments
+end
 
+def patient
+  @patient
+end
+
+def doctor
+  @appointments.collect do |appointment|
+    appointment.doctor
   end
+end
+
 end
 
     #self.patient = patient
