@@ -17,7 +17,7 @@ class Doctor
   end
 
  def patients
-   @appointments
-   #@appointments.collect {|appointment| appointment.patient}
+   binding.pry
+     @appointments.collect {|appointment| appointment.patient}
    end
 end
