@@ -15,12 +15,11 @@ class Appointment
 
   def doctor
     @appointments.collect do |appointment|
-      appointment.doctor
+      Appointment.doctor
     end
   end
 end
 
-    #@name = name
     #self.patient = patient
     #@date = date
     #@doctor = doctor
